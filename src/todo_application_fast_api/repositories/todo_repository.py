@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
 from uuid import UUID
-from models.todo import Todo
+from todo_application_fast_api.models.todo import Todo
 class TodoRepository(ABC):
     """Contract every repository (list, MongoDB, ...) must follow."""
     @abstractmethod

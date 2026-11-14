@@ -1,5 +1,5 @@
-from models.todo import Todo, TodoCreate
-from repositories.todo_repository import TodoRepository
+from todo_application_fast_api.models.todo import Todo, TodoCreate
+from todo_application_fast_api.repositories.todo_repository import TodoRepository
 
 class TodoNotFoundError(Exception):
     """Raised when a todo does not exist. The Controller turns this

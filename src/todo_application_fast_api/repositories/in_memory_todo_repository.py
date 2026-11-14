@@ -1,7 +1,7 @@
 from typing import List, Optional
 from uuid import UUID
-from models.todo import Todo
-from repositories.todo_repository import TodoRepository
+from todo_application_fast_api.models.todo import Todo
+from todo_application_fast_api.repositories.todo_repository import TodoRepository
 class InMemoryTodoRepository(TodoRepository):
     """Stores todos in a plain Python list. No database needed yet."""
     def __init__(self):
